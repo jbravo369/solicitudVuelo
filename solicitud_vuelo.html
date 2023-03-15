@@ -1,4 +1,4 @@
-  <!DOCTYPE html>
+    <!DOCTYPE html>
   <html>
   <head>
     <meta charset="utf-8">
@@ -14,47 +14,48 @@
   <body>
 
    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
-     <div class="container-fluid">
-       <img src="lmx.png" height="60" width="70">
+  <div class="container-fluid">
+    <img src="lmx.png" height="60" width="70">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-           <li class="nav-item">
-             <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
-           </li>
-           <li class="nav-item">
-             <a class="nav-link" href="#">Disposición</a>
-           </li>
-           <li class="nav-item dropdown">
-             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-               Aeronaves
-             </a>
-             <ul class="dropdown-menu">
-               <li><a class="dropdown-item" href="#">Disponibilidad Aeronaves</a></li>
-               <li><a class="dropdown-item" href="#">Consulta Disponibilidad Aeronaves</a></li>
-               <li><hr class="dropdown-divider"></li>
-               <li><a class="dropdown-item" href="#">Modificacion de Vuelos</a></li>
-             </ul>
-           </li>
-           <li class="nav-item dropdown">
-             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-               Vuelos
-             </a>
-             <ul class="dropdown-menu">
-               <li><a class="dropdown-item" href="solicitud_vuelo.html">Crear Solicitud de Vuelo</a></li>
-               <li><a class="dropdown-item" href="asignacion_vuelo.html" onclick="borrarValor()">Crear Asignacion de vuelo</a></li>
-               <li><hr class="dropdown-divider"></li>
-               <li><a class="dropdown-item" href="#">Ver Solicitud de Vuelo</a></li>
-               <li><a class="dropdown-item" href="#">Ver Asignación de Vuelo</a></li>
-             </ul>
-           </li>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Disposición</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Aeronaves
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Disponibilidad Aeronaves</a></li>
+            <li><a class="dropdown-item" href="#">Consulta Disponibilidad Aeronaves</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Modificacion de Vuelos</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Vuelos
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="solicitud_vuelo.html">Crear Solicitud de Vuelo</a></li>
+            <li><a class="dropdown-item" href="asignacion_vuelo.html" onclick="borrarValor()">Crear Asignacion de vuelo</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Ver Solicitud de Vuelo</a></li>
+            <li><a class="dropdown-item" href="#">Ver Asignación de Vuelo</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
-         </ul>
-
-
-       </div>
-     </div>
-   </nav>
    
    <div class="formbold-main-wrapper">
 
@@ -85,6 +86,8 @@
           />
         </div>
 
+
+
         <div>
           <label for="solicitante" class="formbold-form-label"> 
             Solicitante <span style="color:red">*</span>
@@ -96,6 +99,8 @@
           </select>
         </div>
       </div>
+
+      <hr class="border border-primary border-1 opacity-50">
 
       <div class="formbold-input-flex">
         <div>
@@ -166,6 +171,8 @@
     </div>
   </div>
 
+  <hr class="border border-primary border-1 opacity-50">
+
   <div class="formbold-input-flex">
     <div class="formbold-mb-3">
       <label for="fecha_sol" class="formbold-form-label">
@@ -193,6 +200,8 @@
       />
     </div>
   </div>
+
+
 
   <div class="formbold-input-flex">
     <div class="formbold-mb-3">
@@ -356,6 +365,8 @@
     />
   </div>
 
+  <hr class="border border-primary border-1 opacity-50">
+
   <div>
     <label for="Tarifa" class="formbold-form-label"> 
       Tarifa 
@@ -367,6 +378,8 @@
     class="formbold-form-input"
     />
   </div>
+
+
 
   <div>
     <label for="coments" class="formbold-form-label"> 
