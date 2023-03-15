@@ -7,16 +7,19 @@
 
   body {
     font-family: 'Inter', sans-serif;
-    background-color: #8A2BE2;
   }
+
+.navbar-toggler-icon span {
+  background-color: white;
+}
 
 
   .form-registrer{
-  width: 430px;
+  width: 95%;
+  max-width: 600px;
   background: white;
-  padding: 20px;
+  padding: 10%;
   margin: auto;
-  margin-top: 1px;
   border-radius: 10px;
   font-family: 'comic-sans';
   color: white;
@@ -43,7 +46,7 @@
     display: flex;
     
     justify-content: center;
-    padding: 15px;
+   
   }
 
   .formbold-form-wrapper {
