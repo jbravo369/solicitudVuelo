@@ -57,351 +57,124 @@
 </nav>
 
    
-   <div class="formbold-main-wrapper">
+    <div class="formbold-main-wrapper">
 
 
-    <div class="formbold-form-wrapper">
+      
 
-      <form  class="form-registrer" onsubmit="return false;">
+<div class="formbold-form-wrapper">
 
-        <div class="formbold-form-title">
-          <h2 class="">Solicitud de vuelo</h2>
-          <p>
-            Ingrese los datos correspondientes para una solicitud de vuelo. 
-          </p>
-        </div>
+  <form onsubmit="return false;" class="form-registrer">
 
-
-        <div class="formbold-input-flex">
-         <div>
-          <label for="nSol" class="formbold-form-label">
-            No. Solicitud<span style="color:red">*</span>
-          </label>
-          <input
-          type="number"
-          name="nSol"
-          id="nSol"
-          class="formbold-form-input"
-          required
-          />
-        </div>
-
-
-
-        <div>
-          <label for="solicitante" class="formbold-form-label"> 
-            Solicitante <span style="color:red">*</span>
-          </label>
-          <select class="formbold-form-input">
-            <option value="DIF">Thomas A. Anderson</option>
-            <option value="AGS">Dana Scully</option>
-            <option value="BCN">Fox Mulder</option>
-          </select>
-        </div>
-      </div>
-
-      <hr class="border border-primary border-1 opacity-50">
-
-      <div class="formbold-input-flex">
-        <div>
-          <label for="names" class="formbold-form-label">
-            Nombre <span style="color:red">*</span>
-          </label>
-          <input
-          type="text"
-          name="firstname"
-          id="names"
-          class="formbold-form-input"
-          required
-          />
-        </div>
-
-        <div>
-          <label for="lastname1" class="formbold-form-label">
-           Apellido paterno <span style="color:red">*</span>
-         </label>
-         <input
-         type="text"
-         name="lastname1"
-         id="lastname1"
-         class="formbold-form-input"
-         required
-         />
-       </div>
-
-       <div>
-        <label for="lastname2" class="formbold-form-label"> Apellido materno <span style="color:red">*</span> </label>
-        <input
-        type="text"
-        name="lastname2"
-        id="lastname2"
-        class="formbold-form-input"
-        required
-        />
-      </div>
+    <div class="formbold-form-title">
+      <h2 class="">Asignación</h2>
+      <p>
+        Ingrese los datos correspondientes para la asignación de vuelos. 
+      </p>
     </div>
-
-
 
     <div class="formbold-input-flex">
       <div>
-        <label for="email" class="formbold-form-label">
-         Email <span style="color:red">*</span> 
-       </label>
-       <input
-       type="email"
-       name="email"
-       id="email"
-       class="formbold-form-input"
-       required
-       />
-     </div>
+        <label for="no_solicitud" class="formbold-form-label">
+          No de solicitud de vuelo <span style="color:red">*</span>
+        </label>
+        <select id="solicitud" name="num-solicitud" class="formbold-form-input">
+          <option value="">Seleccionar</option>
+          <option value="001">001</option>
+          <option value="002">002</option>
+          <option value="003">003</option>
+          <option value="004">004</option>
+          <option value="005">005</option>
+          <option value="369">369</option>
+        </select>
+      </div>
 
-     <div>
-      <label for="phone" class="formbold-form-label"> 
-        Celular <span style="color:red">*</span> 
-      </label>
-      <input
+      <div>
+        <label for="no_solicitud" class="formbold-form-label">
+          No de asignacion <span style="color:red">*</span>
+        </label>
+        <input
+             type="number"
+             id="asignacion"
+             class="formbold-form-input"
+             />
+      </div>
+    </div>
+
+    <hr class="border border-primary border-1 opacity-50">
+
+    <div class="formbold-input-flex">
+
+      <div>
+        <label for="pilot" class="formbold-form-label">
+          Nombre del piloto <span style="color:red">*</span>
+        </label>
+        <select class="formbold-form-input">
+          <option value="DIF">Thomas A. Anderson</option>
+          <option value="AGS">Dana Scully</option>
+          <option value="BCN">Fox Mulder</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="copilot" class="formbold-form-label">
+          Nombre del copiloto <span style="color:red">*</span>
+        </label>
+        <select class="formbold-form-input">
+          <option value="DIF">Thomas A. Anderson</option>
+          <option value="AGS">Dana Scully</option>
+          <option value="BCN">Fox Mulder</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="formbold-input-flex">
+      <div>
+        <label for="email" class="formbold-form-label"> Modelo <span style="color:red">*</span> </label>
+        <select id="helicopteros" name="helicopteros" class="formbold-form-input">
+          <option value="bell">Bell</option>
+          <option value="sikorsky">Sikorsky</option>
+          <option value="agusta">Agusta</option>
+          <option value="robinson">Robinson</option>
+          <option value="airbus">Airbus Helicopters</option>
+        </select>
+      </div>
+      <div>
+        <label for="matricula" class="formbold-form-label"> Matricula <span style="color:red">*</span> </label>
+      <select id="matriculas" name="matriculas" class="formbold-form-input">
+        <option value="EC-LDN">EC-LDN</option>
+        <option value="EC-KJZ">EC-KJZ</option>
+        <option value="EC-MDS">EC-MDS</option>
+        <option value="EC-KHX">EC-KHX</option>
+        <option value="EC-JVX">EC-JVX</option>
+      </select>
+      </div>
+    </div>
+
+    <hr class="border border-primary border-1 opacity-50">
+
+    <div>
+      <label for="coments2" class="formbold-form-label"> Comentarios </label>
+      <textarea
       type="text"
-      name="phone"
-      id="phone"
+      name="coments2"
+      id="coments2"
       class="formbold-form-input"
-      required
-      />
-    </div>
-  </div>
-
-  <hr class="border border-primary border-1 opacity-50">
-
-  <div class="formbold-input-flex">
-    <div class="formbold-mb-3">
-      <label for="fecha_sol" class="formbold-form-label">
-        Fecha de solicitud <span style="color:red">*</span>
-      </label>
-      <input
-      type="date"
-      name="fecha_sol"
-      id="fecha_sol"
-      class="formbold-form-input"
-      required
-      />
+      ></textarea>
     </div>
 
-    <div class="formbold-mb-3">
-      <label for="fecha_vuelo" class="formbold-form-label">
-        Fecha de vuelo <span style="color:red">*</span>
-      </label>
-      <input
-      type="date"
-      name="fecha_vuelo"
-      id="fecha_vuelo"
-      class="formbold-form-input"
-      required
-      />
-    </div>
-  </div>
-
-
-
-  <div class="formbold-input-flex">
-    <div class="formbold-mb-3">
-      <label for="origen" class="formbold-form-label">
-        Origen <span style="color:red">*</span>
-      </label>
-
-      <select class="formbold-form-input">
-        <option value="DIF">Distrito Federal</option>
-        <option value="AGS">Aguascalientes</option>
-        <option value="BCN">Baja California</option>
-        <option value="BCS">Baja California Sur</option>
-        <option value="CAM">Campeche</option>
-        <option value="CHP">Chiapas</option>
-        <option value="CHI">Chihuahua</option>
-        <option value="COA">Coahuila</option>
-        <option value="COL">Colima</option>
-        <option value="DUR">Durango</option>
-        <option value="GTO">Guanajuato</option>
-        <option value="GRO">Guerrero</option>
-        <option value="HGO">Hidalgo</option>
-        <option value="JAL">Jalisco</option>
-        <option value="MEX">M&eacute;xico</option>
-        <option value="MIC">Michoac&aacute;n</option>
-        <option value="MOR">Morelos</option>
-        <option value="NAY">Nayarit</option>
-        <option value="NLE">Nuevo Le&oacute;n</option>
-        <option value="OAX">Oaxaca</option>
-        <option value="PUE">Puebla</option>
-        <option value="QRO">Quer&eacute;taro</option>
-        <option value="ROO">Quintana Roo</option>
-        <option value="SLP">San Luis Potos&iacute;</option>
-        <option value="SIN">Sinaloa</option>
-        <option value="SON">Sonora</option>
-        <option value="TAB">Tabasco</option>
-        <option value="TAM">Tamaulipas</option>
-        <option value="TLX">Tlaxcala</option>
-        <option value="VER">Veracruz</option>
-        <option value="YUC">Yucat&aacute;n</option>
-        <option value="ZAC">Zacatecas</option>
-      </select>
-    </div>
-
-    <div class="formbold-mb-3">
-      <label for="destino" class="formbold-form-label">
-        Destino <span style="color:red">*</span>
-      </label>
-
-      <select class="formbold-form-input">
-        <option value="DIF">Distrito Federal</option>
-        <option value="AGS">Aguascalientes</option>
-        <option value="BCN">Baja California</option>
-        <option value="BCS">Baja California Sur</option>
-        <option value="CAM">Campeche</option>
-        <option value="CHP">Chiapas</option>
-        <option value="CHI">Chihuahua</option>
-        <option value="COA">Coahuila</option>
-        <option value="COL">Colima</option>
-        <option value="DUR">Durango</option>
-        <option value="GTO">Guanajuato</option>
-        <option value="GRO">Guerrero</option>
-        <option value="HGO">Hidalgo</option>
-        <option value="JAL">Jalisco</option>
-        <option value="MEX">M&eacute;xico</option>
-        <option value="MIC">Michoac&aacute;n</option>
-        <option value="MOR">Morelos</option>
-        <option value="NAY">Nayarit</option>
-        <option value="NLE">Nuevo Le&oacute;n</option>
-        <option value="OAX">Oaxaca</option>
-        <option value="PUE">Puebla</option>
-        <option value="QRO">Quer&eacute;taro</option>
-        <option value="ROO">Quintana Roo</option>
-        <option value="SLP">San Luis Potos&iacute;</option>
-        <option value="SIN">Sinaloa</option>
-        <option value="SON">Sonora</option>
-        <option value="TAB">Tabasco</option>
-        <option value="TAM">Tamaulipas</option>
-        <option value="TLX">Tlaxcala</option>
-        <option value="VER">Veracruz</option>
-        <option value="YUC">Yucat&aacute;n</option>
-        <option value="ZAC">Zacatecas</option>
-      </select>
-    </div>
-  </div>
-
-
-  <div class="formbold-input-flex">
-    <div class="formbold-mb-3">
-      <label for="pasajeros" class="formbold-form-label">
-        Pasajeros <span style="color:red">*</span>
-      </label>
-      <input
-      type="number"
-      name="pasajeros"
-      id="pasajeros"
-      class="formbold-form-input"
-      min="1"
-      required
-      />
-    </div>
 
     <div>
-      <label for="distancia" class="formbold-form-label"> 
-        Distancia (M.N.) <span style="color:red">*</span>
-      </label>
-      <input
-      type="number"
-      name="distancia"
-      id="distancia"
-      class="formbold-form-input"
-      />
+      <button class="btn btn-primary " style="margin-top:10px;">ROD</button>
+      <button class="btn btn-danger " style="margin-top:10px;">No realizado</button>
     </div>
 
-    <div>
-      <label for="tiempo" class="formbold-form-label"> 
-        Tiempo de espera <span style="color:red">*</span>
-      </label>
-      <input
-      type="number"
-      name="tiempo"
-      id="tiempo"
-      class="formbold-form-input"
-      />
-    </div>
-  </div>
-
-  <div class="formbold-input-flex">
-    <div class="formbold-mb-3">
-      <label for="ETD" class="formbold-form-label">
-        Estimated Time of Departure (ETD) <span style="color:red">*</span>
-      </label>
-      <input
-      type="time"
-      name="ETD"
-      id="ETD"
-      class="formbold-form-input"
-      />
-    </div>
-    <div class="formbold-mb-3">
-      <label for="ETA" class="formbold-form-label">
-        Estimated Time of Arrival (ETA) <span style="color:red">*</span>
-      </label>
-      <input
-      type="time"
-      name="ETA"
-      id="ETA"
-      class="formbold-form-input"
-      />
-    </div>
-  </div>
-
-  <div class="formbold-mb-3">
-    <label for="ETE" class="formbold-form-label">
-      Estimated Time of Enroute (ETE) <span style="color:red">*</span>
-    </label>
-    <input
-    type="number"
-    name="ETE"
-    id="ETE"
-    class="formbold-form-input"
-    />
-  </div>
-
-  <hr class="border border-primary border-1 opacity-50">
-
-  <div>
-    <label for="Tarifa" class="formbold-form-label"> 
-      Tarifa 
-    </label>
-    <input
-    type="number"
-    name="tarifa"
-    id="tarifa"
-    class="formbold-form-input"
-    />
-  </div>
-
-
-
-  <div>
-    <label for="coments" class="formbold-form-label"> 
-      Comentarios 
-    </label>
-    <textarea
-    type="text"
-    name="coments"
-    id="coments"
-    class="formbold-form-input"
-    ></textarea>
-  </div>
-
-  <div>
-    <button class="btn btn-primary" style="margin-top:10px;">Enviar</button>
-    <button id="btnAsign" class="btn btn-danger" onclick="mostrarValor()" style="margin-top:10px;"> Asignación </button> 
-  </div>
-
-</form>
+  </form>
+</div>
 </div>
 
 
-</div>
+
+
 </body>
 </html>
